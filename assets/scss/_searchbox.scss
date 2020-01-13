@@ -1,0 +1,14 @@
+.wazuh-searchbox .wazuh-search-input {
+  width: 0px;
+  border: 0px;
+  height: $sbox-height;
+  padding: 0px;
+  border-radius: $sbox-border-radius;
+  outline: none;
+  transition: all $sbox-transition-time linear;
+}
+
+.wazuh-searchbox .wazuh-search-input.wazuh-active-width{
+  width: $sbox-width;
+  padding: $sbox-padding;
+}

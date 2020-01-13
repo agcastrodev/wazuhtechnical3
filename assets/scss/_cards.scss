@@ -1,0 +1,21 @@
+.wazuh-image-card {
+  margin-top: $card-margin-top;
+  padding-top: $card-padding-top;
+  border-color: $theme-gray;
+  background: $theme-gray;
+  color: $light-black;
+
+  .wazuh-card-top {
+    display: block;
+    position: absolute;
+    top: $card-img-offset;
+    padding-right: $card-img-padding-x;
+    padding-left: $card-img-padding-x;
+  }
+}
+
+@include mq('desktop'){
+  .wazuh-image-card {
+    margin-top: 0;
+  }
+}

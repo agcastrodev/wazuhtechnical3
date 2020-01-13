@@ -1,0 +1,19 @@
+.wazuh-product-box {
+  background-color: $theme-primary;
+  color: $white;
+  border-radius: $pbox-radius-size;
+  padding: $pbox-padding-y $pbox-padding-x;
+  margin-top: $pbox-margin-y;
+
+  p {
+    font-size: 0.8em;
+  }
+}
+
+.wazuh-current-product {
+  display: block;
+}
+
+.wazuh-hidden-product {
+  display: none;
+}

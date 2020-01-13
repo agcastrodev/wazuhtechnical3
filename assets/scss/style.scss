@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+@import "buttons";
+@import "cards";
+@import "lists";
+@import "productboxes";
+@import "searchbox";
+@import "sections";
+@import "slider";
+@import "tabs";
+@import "text";
+@import "navbar";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+}
+
+header {
+  padding: $header-padding-y $header-padding-x;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $heading-font;
+}
+
+a {
+  cursor: pointer;
+}
+
+
+
+@include mq('desktop'){
+  header {
+    padding: $header-lg-padding-y $header-lg-padding-x;
+  }
+}
+

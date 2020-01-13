@@ -1,0 +1,125 @@
+// Color system
+
+$theme-gray:                                    #f4f4f4 !default;
+$theme-primary:                           #00a9e5 !default;
+$theme-primary-dark:                            #0094ce !default;
+$theme-secondary:                               #ffb600 !default;
+
+$white:                                         #fff !default;
+$light-white:                                     rgba($white, .8) !default;
+$lighter-white:                                   rgba($white, .5) !default;
+$dark-white:                                    #ededed !default;
+$light-black:                                   #333 !default;
+$semitransparent:                                 rgba($white, .1) !default;
+
+// Fonts
+
+$heading-font:                                    'Montserrat', sans-serif;
+$text-font:                                       'Open Sans', sans-serif;
+
+// Font sizes
+
+$font-size-larger:                                .95em;
+$font-size-larger-desktop:                        1.1em;
+$font-size-small:                                 .8em;
+$font-size-smaller:                               .7em;
+
+// Buttons
+
+$btn-height:                                      40px;
+$btn-lg-height-desktop:                           $btn-height;
+$btn-lg-height:                                   0.9 * $btn-lg-height-desktop;
+$btn-big-height:                                  110px;
+$btn-big-height-desktop:                          130px;
+$btn-big-font-size:                               .9em;
+$btn-big-font-size-desktop:                       1.3em;
+$btn-big-icon-size:                               2em;
+
+// Cards
+
+$card-padding-top:                                40px;
+$card-margin-top:                                 150px;
+$card-img-padding-x:                              40px; 
+$card-img-offset:                                -100px;
+
+// Header
+
+$header-padding-x:                                5px;
+$header-padding-y:                                0;
+$header-lg-padding-x:                             150px;
+$header-lg-padding-y:                             $header-padding-y;
+
+// Lists
+$list-bullet-sm-side:                          0.15em;
+$list-bullet-lg-side:                          0.25em;
+$list-bullet-x-offset:                            -1em;
+$list-bullet-y-offset:                            0.9em;
+
+// Main container
+
+$main-padding-x:                                  150px;
+$main-padding-y:                                  0;
+
+// Navbar
+
+$navbar-transparent-active-color:                 $white !default;
+$navbar-transparent-brand-hover-color:            $navbar-transparent-active-color !default;
+$navbar-transparent-brand-color:                  $navbar-transparent-active-color !default;
+$navbar-transparent-disabled-color:               $light-white !default;
+$navbar-transparent-color:                        $white !default;
+$navbar-transparent-hover-color:                  $white !default;
+
+// Product boxes
+
+$pbox-radius-size:                                5px;
+$pbox-padding-x:                                  20px;
+$pbox-padding-y:                                  30px;
+$pbox-margin-y:                                   40px;
+
+// Searchbox
+
+$sbox-height:                                     30px;
+$sbox-width:                                      300px;
+$sbox-border-radius:                              5px;
+$sbox-transition-time:                            0.5s;
+$sbox-padding:                                    5px;
+
+// Sections
+
+$section-font-size:                               1.2em !default;
+$section-padding-x:                               $header-padding-x;
+$section-padding-y:                               60px;
+$section-lg-padding-x:                            $header-lg-padding-x;
+$section-lg-padding-y:                            $section-padding-y;
+
+// Slider
+$slider-icon-font-size:                           2.5em;
+$slider-icon-font-size-desktop:                   3em;
+$slider-title-font-size:                          1em;
+$slider-title-font-size-desktop:                  2em;
+
+// Tabs
+
+$tabs-icon-size:                                  4em;
+$tabs-text-size:                                  1.2em;
+$tabs-border-size:                                3px;
+$tabs-arrow-bottom:                               (-1.7) * $pbox-margin-y;
+$tabs-arrow-side:                                 45px;
+
+// Welcome section
+
+$welcome-background-height:                       795px;
+$welcome-background-image:                        "../img/wazuh_bg_head.png";
+
+// Wazuh as a service section
+
+$service-padding-top:                             10%;
+$service-padding-bottom:                          25%;
+$service-background-image-top:                    "../img/service_top.png";
+$service-background-image-bottom:                 "../img/service_bottom.png";
+
+// Get Wazuh section
+
+$gw-background-image:                             "../img/get_wazuh_bg.png";
+$gw-padding-top:                                  40%;
+$gw-padding-top-desktop:                          20%;

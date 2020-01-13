@@ -1,0 +1,21 @@
+.wazuh-triangle-list {
+  list-style: none;
+
+  li {  
+  
+    &:before {
+      content: "";  
+      border-color: transparent $white;  
+      border-style: solid;  
+      border-width: $list-bullet-sm-side 0 $list-bullet-sm-side $list-bullet-lg-side;  
+      display: block;  
+      height: 0;  
+      width: 0;  
+      left: $list-bullet-x-offset;  
+      top: $list-bullet-y-offset;  
+      position: relative;  
+    }
+    
+  } 
+}
+

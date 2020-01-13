@@ -1,0 +1,52 @@
+.wazuh-tab {
+  i {
+    font-size: $tabs-icon-size;
+  }
+
+  .wazuh-tab-text {
+    font-size: $tabs-text-size;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.wazuh-tab-active {
+  background: $theme-secondary;
+  color: $white;
+  cursor: default;
+  border: $tabs-border-size solid $theme-secondary;
+
+  a {
+    cursor: default;
+  }
+
+  &:hover {
+    background: $theme-secondary;
+    color: $white;
+  }
+
+  &:after {
+    bottom: $tabs-arrow-bottom;
+    content: '';
+    display: block;
+    width: $tabs-arrow-side;
+    height: $tabs-arrow-side;
+    background-color: $theme-primary;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.wazuh-tab-light {
+  cursor: pointer;
+  border: $tabs-border-size solid $theme-primary;
+  @include swap-colors-on-hover($theme-primary, $white);
+}

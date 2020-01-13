@@ -1,0 +1,23 @@
+.wazuh-slider {
+  i {
+    color: $theme-secondary;
+    font-size: $slider-icon-font-size;
+  }
+
+  .wazuh-slider-title {
+    font-size: $slider-title-font-size;
+  }
+}
+
+@include mq('desktop'){
+  .wazuh-slider {
+    i {
+      font-size: $slider-icon-font-size-desktop;
+    }
+  
+    .wazuh-slider-title {
+      font-size: $slider-title-font-size-desktop;
+    }
+  }
+  
+}

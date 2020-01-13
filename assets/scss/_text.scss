@@ -1,0 +1,29 @@
+// Text color
+
+.wazuh-text-dark {
+  color: $light-black;
+}
+
+.wazuh-text-primary {
+  color: $theme-primary;
+}
+
+// Text custom sizes
+
+.wazuh-text-larger {
+  font-size: $font-size-larger;
+}
+
+.wazuh-text-small {
+  font-size: $font-size-small;
+}
+
+.wazuh-text-smaller {
+  font-size: $font-size-smaller;
+}
+
+@include mq('desktop'){
+  .wazuh-text-larger {
+    font-size: $font-size-larger-desktop;
+  }
+}

@@ -1,0 +1,56 @@
+// Button sizes
+
+.wazuh-btn {
+  min-height: $btn-height;
+}
+
+.wazuh-btn-lg {
+  min-height: $btn-lg-height;
+  font-weight: bold;
+}
+
+.wazuh-btn-big {
+  min-height: $btn-big-height;
+  font-size: $btn-big-font-size;
+  vertical-align: middle;
+
+  i {
+    font-size: $btn-big-icon-size;
+    vertical-align: middle;
+  }
+}
+
+// Button colors
+
+.wazuh-btn-light {
+  @include swap-colors-on-hover($theme-primary-dark, $white)
+}
+
+.wazuh-btn-primary {
+  @include swap-colors-on-hover($white, $theme-primary)
+}
+
+.wazuh-btn-primary-dark {
+  @include swap-colors-on-hover($white, $theme-primary-dark)
+}
+
+.wazuh-btn-secondary {
+  @include swap-colors-on-hover($white, $theme-secondary)
+}
+
+.wazuh-btn-semitransparent {
+  color: $white;
+  background: $semitransparent;
+
+  &:hover {
+    color: $theme-primary;
+    background: $white;
+  }
+}
+
+@include mq('desktop'){
+  .wazuh-btn-big {
+    min-height: $btn-big-height-desktop;
+    font-size: $btn-big-font-size-desktop;
+  }
+}

@@ -1,0 +1,62 @@
+// Common styles between sections
+
+section {
+  padding: $section-padding-y $section-padding-x;
+  font-size: $section-font-size;
+  min-height: 100%;
+}
+
+.section-light {
+  color: $white;
+}
+
+// Custom styles for each section
+
+#welcome {
+  background: url($welcome-background-image)  no-repeat center center;
+  background-size: 100% 100% !important;
+  padding-bottom: 15%;
+}
+
+#service {
+  padding-top: $service-padding-top;
+  padding-bottom: $service-padding-bottom;
+  background-size: 100% !important;
+  background: url($service-background-image-top) top no-repeat,
+              url($service-background-image-bottom) bottom no-repeat,
+              $theme-gray;
+}
+
+#getwazuh {
+    padding-top: $gw-padding-top;
+    background-size: 100% !important;
+    background: url($gw-background-image) top no-repeat,
+                $theme-primary;
+}
+
+#footer {
+  background: $theme-primary-dark;
+
+  a {
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+      color: $theme-secondary;
+    }
+  }
+}
+
+@include mq('desktop'){
+  section {
+    padding: $section-lg-padding-y $section-lg-padding-x;
+  }
+
+  #footer {
+    font-size: $font-size-small;
+  }
+
+  #getwazuh {
+    padding-top: $gw-padding-top-desktop;
+  }
+}

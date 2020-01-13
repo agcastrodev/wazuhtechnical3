@@ -1,0 +1,49 @@
+// Transparent background for navbar
+.bg-transparent {
+  background: rgba($color: #000000, $alpha: 0);
+}
+
+// White links against a transparent background
+.navbar-transparent {
+  .navbar-brand {
+    color: $navbar-transparent-brand-color;
+
+    &:hover,
+    &:focus {
+      color: $navbar-transparent-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-transparent-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-transparent-hover-color;
+        font-weight: bold;
+      }
+
+      &.disabled {
+        color: $navbar-transparent-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-transparent-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $white;
+  }
+}
+
+
+
+.navbar-brand img {
+  height: 40px;
+}
